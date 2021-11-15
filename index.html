@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro to Bootstrap</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Braggin' About Brian</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#default">Home</a></li><p> | </p>
+                <li><a href="#about">About</a></li><p> | </p>
+                <li><a href="#hobbies">Hobbies</a></li><p> | </p>
+                <li><a href="#gallery">Gallery</a></li><p> | </p>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </div>
+        <h2 id="about">About Brian</h2>
+        <p>Welcome to this little site about one of the best dogs ever!</p>
+        <!-- LIST -->
+        <ul>
+            <li><strong>Age:</strong> 7</li>
+            <li><strong>Nickname:</strong> Bri Guy</li>
+            <li><strong>Breed:</strong> Mutt (Samoyed, Lab, Australian Shepherd etc.)</li>
+        </ul>
+        <h2 id="hobbies">Hobbies</h2>
+        <!-- TABLE -->
+            <table>
+                <thead>
+                    <tr>
+                        <td>rank</td>
+                        <td>hobby</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Receiving attention</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cuddling</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Eating garbage</td>
+                </tr> 
+                <tr>
+                    <td>4</td>
+                    <td>Napping</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Shedding</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Hiking</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Swimming</td>
+                </tr>
+            </table>
+        <h2 id="gallery">Gallery</h2>
+        <!-- IMAGES -->
+        <img src="brian_slide1.JPG"
+        style="float: left; height:200px">
+        <img src="brian_slide2.JPG"
+        style="float: left; height:200px">
+        <img src="brian_slide3.JPG"
+        style="float: left; height:200px">
+        <img src="brian_slide4.JPG"
+        style="float: left; height:200px">
+        <h2 id="reviews">Reviews</h2>
+        <!-- QUOTE -->
+        <q>He's the best dog I've ever met, and I've met a lot of dogs</q>
+        <p>-Anonymous, 2021</p>
+        <p id="message"></p>
+        <!-- BUTTON -->
+        <button onclick="thank()">Click this button to send Brian a treat!</button>
+        <script>
+            function thank() {
+              document.getElementById("message").innerHTML = "Thank you!";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.menu { 
+    text-align: left;
+    margin-right: 15px;
+}
+.menu ul {
+/* remove bullets from menu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+/* make menu horizontal */
+    display: inline;
+}
+.menu p {
+/* make menu horizontal */
+    display: inline;
+}
